@@ -12,5 +12,6 @@ baseComponent -> onInit -> getConfig from localStorage
 		-> set desktopHeaderDisplay: visible if it's true
 		-> set fitTop: any?
 		-> set fluid: fluid if true
+leftAsideComponent -> call menuList$ Observable through async pipe in #menuListTemplate (menuAside services)
 
 

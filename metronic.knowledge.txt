@@ -1,0 +1,16 @@
+layout-config.model is a model interface
+app module -> đăng ký layoutConfigService (providers) -> factory function initializer by layoutConfigService
+initializer -> first get config from localStorage -> if null load default config from layout.config
+baseComponent -> load config the same with app module initializer (pass default config from config files)
+		-> then save config in localStorage
+baseComponent -> constructor -> inject config to htmlClassService 
+		-> add class to body!!! based on loaded config
+baseComponent -> onInit -> getConfig from localStorage
+		-> set selfLayout
+		-> set asideDisplay: visible if it's true
+		-> set subHeaderDisplay: visible if it's true
+		-> set desktopHeaderDisplay: visible if it's true
+		-> set fitTop: any?
+		-> set fluid: fluid if true
+
+
